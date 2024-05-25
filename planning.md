@@ -34,3 +34,4 @@ Page 4
 
 nav --> flexbox
 waaromCalesthenicsContainer --> flexbox, de h3 en p zitten samen in 1 div
+footer --> flex
