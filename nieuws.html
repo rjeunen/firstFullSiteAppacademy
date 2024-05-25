@@ -19,5 +19,47 @@
             </ul>
         </div>
     </nav>
+    <h1>Calesthenics nieuws</h1>
+    <p>Wil je graag op de hoogte blijven van al de nieuwtjes binnen de fasinerende wereld van Calesthenics?<br>
+        Hieronder heb je de keuze om je aal te melden voor de volledig gratis nieuwdbrief! <br>
+        Je zal niet overladen worden met spam. Onze nieuwsbroef zal 1 keer per maand naar het opgegeven email adres gestuurd worden. <br>
+        Uiteraard kan je op elk gewenst moment jezelf schrappen van de nieuwbrieflijst.
+    </p>
+    <form action="/calesthenics-url" method="post">
+        <fieldset>
+            <legend>Inschrijven nieuwsbrief</legend>
+            <div>
+                <label for="voornaam">Voornaam</label>
+                <input type="text" id="voornaam" name="voornaam">
+            </div>
+            <div>
+                <label for="achternaam">Achternaam</label>
+                <input type="text" id="achternaam" name="achternaam">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="media">Hoe heb je van ons gehoord?</label>
+                <select name="typeMedia" id="media">
+                    <option value="keuze">Kies een optie</option>
+                    <option value="socialMedia">Social Media</option>
+                    <option value="vrienden">vrienden</option>
+                    <option value="web">Website</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="privacy" name="privacy">
+                <label for="privacy">Ik ga akkoord met de privacy policy</label>
+            </div>
+            <div>
+                <button type="submit">Verzenden</button>
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <p>Copyright &copy; 2024. Alle rechten voorbehouden!</p>
+    </footer>
 </body>
 </html>
