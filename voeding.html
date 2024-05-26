@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Calesthenics-Voeding</title>
 </head>
 <body>
-    <nav id="topOfPage">
-        <div class="logo">
-            <img src="images/Logo.jpg" alt="Calethenics logo">
+    <nav class="flexContainerNav">
+        <div class="navItem" id="topOfPageVoeding">
+            <img class="logo" src="images/Logo.jpg" alt="Calethenics logo">
         </div>
-        <div class="linksContainer">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nieuws.html">Nieuws</a></li>
-                <li><a href="voeding.html">Voeding</a></li>
-                <li><a href="community.html">community</a></li>
+        <div class="linkslist navItem">
+            <ul class="linksContainer">
+                <li class="linkItem"><a href="index.html">Home</a></li>
+                <li class="linkItem"><a href="nieuws.html">Nieuws</a></li>
+                <li class="linkItem"><a href="voeding.html">Voeding</a></li>
+                <li class="linkItem"><a href="community.html">community</a></li>
             </ul>
         </div>
     </nav>
@@ -50,8 +51,9 @@
             <li><a href="https://nl.wikipedia.org/wiki/Superfood" target="_blanc">Superfoods</a></li>
         </ul>
     </ol>
-    <footer>
-        <p>Copyright &copy; 2024. Alle rechten voorbehouden!</p>
+    <footer class="flexContainerNav">
+        <p class="navItem">Copyright &copy; 2024. Alle rechten voorbehouden!</p>
+        <button><a href="#topOfPageVoeding">Top &uarr;</a></button>
     </footer>
 </body>
 </html>

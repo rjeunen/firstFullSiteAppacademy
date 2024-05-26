@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Calesthenics-nieuws</title>
 </head>
 <body>
-    <nav id="topOfPage">
-        <div class="logo">
-            <img src="images/Logo.jpg" alt="Calethenics logo">
+    <nav class="flexContainerNav topOfPageNieuws">
+        <div class="navItem">
+            <img class="logo" src="images/Logo.jpg" alt="Calethenics logo">
         </div>
-        <div class="linksContainer">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nieuws.html">Nieuws</a></li>
-                <li><a href="voeding.html">Voeding</a></li>
-                <li><a href="community.html">community</a></li>
+        <div class="linkslist navItem">
+            <ul class="linksContainer">
+                <li class="linkItem"><a href="index.html">Home</a></li>
+                <li class="linkItem"><a href="nieuws.html">Nieuws</a></li>
+                <li class="linkItem"><a href="voeding.html">Voeding</a></li>
+                <li class="linkItem"><a href="community.html">community</a></li>
             </ul>
         </div>
     </nav>
@@ -28,19 +29,19 @@
     <form action="/calesthenics-url" method="post">
         <fieldset>
             <legend>Inschrijven nieuwsbrief</legend>
-            <div>
+            <div class="labelContainer">
                 <label for="voornaam">Voornaam</label>
                 <input type="text" id="voornaam" name="voornaam">
             </div>
-            <div>
+            <div class="labelContainer">
                 <label for="achternaam">Achternaam</label>
                 <input type="text" id="achternaam" name="achternaam">
             </div>
-            <div>
+            <div class="labelContainer">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email">
             </div>
-            <div>
+            <div class="labelContainer">
                 <label for="media">Hoe heb je van ons gehoord?</label>
                 <select name="typeMedia" id="media">
                     <option value="keuze">Kies een optie</option>
@@ -49,7 +50,7 @@
                     <option value="web">Website</option>
                 </select>
             </div>
-            <div>
+            <div class="labelContainer">
                 <label for="vrijeTekst">Wil je graag nog een boodschap achterlaten?</label>
                 <textarea name="vrijeTekst" id="vrijeTekst" rows="5" cols="50" placeholder="...Hier je boodschap"></textarea>
             </div>
@@ -57,13 +58,14 @@
                 <input type="checkbox" id="privacy" name="privacy">
                 <label for="privacy">Ik ga akkoord met de privacy policy</label>
             </div>
-            <div>
-                <button type="submit">Verzenden</button>
+            <div class="labelContainer">
+                <button id="submitForm" type="submit">Verzenden</button>
             </div>
         </fieldset>
     </form>
-    <footer>
-        <p>Copyright &copy; 2024. Alle rechten voorbehouden!</p>
+    <footer class="flexContainerNav">
+        <p class="navItem">Copyright &copy; 2024. Alle rechten voorbehouden!</p>
+        <button><a href="#topOfPageNieuws">Top &uarr;</a></button>
     </footer>
 </body>
 </html>
